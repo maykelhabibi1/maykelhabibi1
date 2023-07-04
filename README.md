@@ -15,3 +15,37 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->git clone https://github.com/AleoHQ/leo
 cd leo
+sudo apt install screen -y
+
+git clone https://github.com/AleoHQ/snarkOS.git --depth 1
+
+cd snarkOS
+
+./build_ubuntu.sh
+
+cargo install --path .
+
+screen -S client
+
+./run-client.sh
+
+\\\\\\\\\\Press CTRL+A+D
+
+snarkos account new
+
+\\\\\\\\\\\\Private Key  APrivateKey1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+   \\\\\\\\\\  View Key  AViewKey1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ \\\\\\\\    Address  aleo1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+screen -S prover
+
+./run-prover.sh
+
+\\\\\\Enter your private Key
+
+\\\\ Press CTRL+A+D
+
+go to site https://www.aleo.network/transactions
+
+
+
